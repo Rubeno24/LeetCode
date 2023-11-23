@@ -26,6 +26,7 @@ public class LeetCode3 {
                 //then add the duplicated char to the set, its not duped since the pointer was moved and removed
                 set.add(s.charAt(right));
                 //
+                //
             }
         }
         //return the maxlength or right-left +1 since it starts at 0
