@@ -17,6 +17,8 @@ public class LeetCode11 {
                 last--;
             }
         }
+
+
         return maxArea;
     }
 }

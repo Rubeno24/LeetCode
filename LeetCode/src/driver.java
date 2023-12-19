@@ -9,7 +9,7 @@ class Driver {
 
     public static void main(String[] args) throws Exception {
         LeetCode11 x = new LeetCode11();
-        int arr []  = new int[]{1,8,6,2,5,4,8,3,7};
+        int arr []  = new int[]{1,8,6,2,5,4,8,3,9};
         System.out.println(x.maxArea(arr));
         x.maxArea(arr);
         
