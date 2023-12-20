@@ -7,9 +7,8 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         
-        LeetCode3 x = new LeetCode3();
+        Leetcode169 x = new Leetcode169();
        
-        System.out.println( x.lengthOfLongestSubstring("abbcbb"));
        
         
     }

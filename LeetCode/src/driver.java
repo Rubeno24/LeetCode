@@ -1,5 +1,7 @@
 import java.sql.*;
+import java.util.HashMap;
 import java.util.InputMismatchException;
+import java.util.Map;
 import java.util.Scanner;
 
 class Driver {
@@ -8,13 +10,10 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        LeetCode11 x = new LeetCode11();
-        int arr []  = new int[]{1,8,6,2,5,4,8,3,9};
-        System.out.println(x.maxArea(arr));
-        x.maxArea(arr);
+        Leetcode169 x = new Leetcode169();
+        int[] arr = {3,3,4};
         
-
-        
+        System.out.println(3/2);
     }
-
 }
+
