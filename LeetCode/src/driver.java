@@ -1,4 +1,5 @@
 import java.sql.*;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Map;
@@ -10,10 +11,10 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        Leetcode169 x = new Leetcode169();
-        int[] arr = {3,3,4};
+        LeetCode412 x = new LeetCode412();
+    
         
-        System.out.println(3/2);
+        System.out.println(x.fizzBuzz(23));
     }
 }
 
