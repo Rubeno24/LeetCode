@@ -12,24 +12,23 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        LeetCode237 x = new LeetCode237();
-    
-        ListNode first = new ListNode(4);
-         ListNode second = new ListNode(5);
-          ListNode third = new ListNode(1);
-           ListNode last = new ListNode(9);
+        LeetCode206 x = new LeetCode206();
 
-       
-        first.next=second;
-        first.next.next=third;
-        first.next.next.next=last;
-        
-  
-        x.deleteNode(third);
-        first.print(first);
+        ListNode first = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = new ListNode(3);
+   
+
+        first.next = second;
+        first.next.next = third;
         
 
-      
+        
+       first.print(first);
+       System.out.println();
+       ListNode reversedList = x.reverseList(first);
+       reversedList.print(reversedList);
+
+
     }
 }
-
