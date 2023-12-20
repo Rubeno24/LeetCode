@@ -1,6 +1,7 @@
 import java.util.HashMap;
 
 public class Leetcode169 {
+    //Majority Element
     public int majorityElement(int[] nums) {
         /*
          * simpler solution
