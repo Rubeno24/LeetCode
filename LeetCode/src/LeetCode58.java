@@ -1,19 +1,21 @@
-public class LeetCode58 {
-    public int lengthOfLastWord(String s) {
-        
-        s=s.trim();
+public class LeetCode58
+//Length of Last Word
 
-        int index=0;
-        for(int i =s.length()-1;i>=0;i--){
-             if(s.charAt(i)==' '){
+{
+    public int lengthOfLastWord(String s) {
+
+        s = s.trim();
+
+        int index = 0;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (s.charAt(i) == ' ') {
                 break;
-             }
-             index++;
-             
+            }
+            index++;
+
         }
         return index;
-        
-        
+
     }
-    
+
 }
