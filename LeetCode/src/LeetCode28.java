@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//Find the Index of the First Occurrence in a String
 public class LeetCode28 {
     public int strStr(String haystack, String needle) {
         int index = 0;
