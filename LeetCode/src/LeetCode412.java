@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LeetCode412 {
+    //fizz buzz
     public List<String> fizzBuzz(int n) {
         //create an arrayList of type String named arr
         ArrayList<String> arr = new ArrayList<>();
