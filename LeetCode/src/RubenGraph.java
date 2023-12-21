@@ -26,6 +26,5 @@ public class RubenGraph {
             };
             System.out.println();
         }
-
     }
 }
