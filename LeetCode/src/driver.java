@@ -6,28 +6,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import oracle.security.o3logon.a;
+
 class Driver {
     static Statement st;
     static Connection con;
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        LeetCode206 x = new LeetCode206();
-
-        ListNode first = new ListNode(1);
-        ListNode second = new ListNode(2);
-        ListNode third = new ListNode(3);
-   
-
-        first.next = second;
-        first.next.next = third;
+        LeetCode1 x = new LeetCode1();
+        int arr [] = new int[]{2,7,11,15};
         
+        System.out.println(Arrays.toString(x.twoSum(arr, 9)));
 
         
-       first.print(first);
-       System.out.println();
-       ListNode reversedList = x.reverseList(first);
-       reversedList.print(reversedList);
 
 
     }
