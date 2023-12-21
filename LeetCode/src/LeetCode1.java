@@ -12,7 +12,7 @@ public class LeetCode1 {
         int[] result = new int[2];
         //loop through the length of the array
         for (int i = 0; i < n; i++) {
-            // if the hashmap has the key that is target - nums[i]
+            // if the hashmap has the compliment which is current element minus from the target
             if (map.containsKey(target - nums[i])) {
                 //result[1] will be equal to i which is the index
                 result[1] = i;

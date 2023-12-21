@@ -14,12 +14,12 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        LeetCode1 x = new LeetCode1();
-        int arr [] = new int[]{2,7,11,15};
-        
-        System.out.println(Arrays.toString(x.twoSum(arr, 9)));
+        LinkedList x = new LinkedList();
+        x.add(1);
+        x.add(2);
+        x.add(5,5);
+        x.print();
 
-        
 
 
     }
