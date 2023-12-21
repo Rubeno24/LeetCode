@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LeetCode1 {
+    //LeetCode 1 Two Sum
     public int[] twoSum(int[] nums, int target) {
         //n is the lenght of the array nums
         int n = nums.length;
