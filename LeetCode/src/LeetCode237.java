@@ -1,5 +1,6 @@
 public class LeetCode237 {
     public void deleteNode(ListNode node) {
+        // Delete Node in a Linked List
         //example linked list given
         //4->5->1->9
         //want to remove the node with the value 5
