@@ -16,21 +16,23 @@ public class LeetCode3 {
                 set.add(s.charAt(right));
                 maxLength = Math.max(maxLength, right - left + 1);// we either return the max length or right-left plus
                                                                   // 1 since it starts at 0
-            } 
-            //this case executes if the char is already in the set 
+            }
+            // this case executes if the char is already in the set
             else {
-                //if the char is in the set move the left pointer to the right so the char is not in the set
+                // if the char is in the set move the left pointer to the right so the char is
+                // not in the set
                 while (set.contains(s.charAt(right))) {
                     set.remove(s.charAt(left));
                     left++;
                 }
-                //then add the duplicated char to the set, its not duped since the pointer was moved and removed
+                // then add the duplicated char to the set, its not duped since the pointer was
+                // moved and removed
                 set.add(s.charAt(right));
                 //
                 //
             }
         }
-        //return the maxlength or right-left +1 since it starts at 0
+        // return the maxlength or right-left +1 since it starts at 0
         return maxLength;
 
     }

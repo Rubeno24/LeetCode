@@ -2,27 +2,28 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LeetCode1 {
-    //LeetCode 1 Two Sum
+    // LeetCode 1 Two Sum
     public int[] twoSum(int[] nums, int target) {
-        //n is the lenght of the array nums
+        // n is the lenght of the array nums
         int n = nums.length;
-        //HashMap where key value pairs are both ints
+        // HashMap where key value pairs are both ints
         Map<Integer, Integer> map = new HashMap<>();
-        //Key= the numbers in the array, Values = the indices in the array
-        //array of 2 index since we only have to return 2 values
+        // Key= the numbers in the array, Values = the indices in the array
+        // array of 2 index since we only have to return 2 values
         int[] result = new int[2];
-        //loop through the length of the array
+        // loop through the length of the array
         for (int i = 0; i < n; i++) {
-            // if the hashmap has the compliment which is current element minus from the target
+            // if the hashmap has the compliment which is current element minus from the
+            // target
             if (map.containsKey(target - nums[i])) {
-                //result[1] will be equal to i which is the index
+                // result[1] will be equal to i which is the index
                 result[1] = i;
-                //result[0] will be equal to the value that the key target-nums[i] gives
+                // result[0] will be equal to the value that the key target-nums[i] gives
                 result[0] = map.get(target - nums[i]);
                 break;
             }
-            //map doesnt contain the key we add nums[i] to the map which is the value
-            //also add the value which is the index in this case
+            // map doesnt contain the key we add nums[i] to the map which is the value
+            // also add the value which is the index in this case
             map.put(nums[i], i);
         }
         return result;
@@ -30,7 +31,7 @@ public class LeetCode1 {
 
 }
 /*
-    Brute force way
+ * Brute force way
  * public int[] twoSum(int[] nums, int target) {
  * int arr []= new int[2];
  * for(int i=0; i<nums.length;i++){

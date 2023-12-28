@@ -1,5 +1,5 @@
 public class LeetCode206 {
-    //Reverse Linked Lists
+    // Reverse Linked Lists
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         while (head != null) {
@@ -8,11 +8,12 @@ public class LeetCode206 {
             prev = head;
             head = temp;
         }
-        
+
         return prev;
     }
 }
-/*  Example run through
+/*
+ * Example run through
  * 1->2->3
  * temp=head.next (temp=2)
  * 
@@ -35,7 +36,7 @@ public class LeetCode206 {
  * temp=head.next (temp=null)
  * 
  * head.next=prev
- * 1<-2<-3 
+ * 1<-2<-3
  * prev=head (prev=3)
  * 
  * head=temp (head null)
