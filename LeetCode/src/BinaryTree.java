@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class BinaryTree {
     private TreeNode root;
 
@@ -24,11 +26,12 @@ public class BinaryTree {
         System.out.println();
     }
 
-    private void inOrderTraversal(TreeNode node) {
+    public void inOrderTraversal(TreeNode node) {
         if (node != null) {
             inOrderTraversal(node.left);
             System.out.print(node.data + " ");
             inOrderTraversal(node.right);
         }
     }
+
 }

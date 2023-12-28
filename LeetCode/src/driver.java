@@ -12,17 +12,12 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        LinkedList x = new LinkedList();
-        x.add(0);
-        x.add(1);
-        x.add(2);
-        x.remove();
-        x.remove();
-        x.remove();
-        x.add(2);
-        x.print();
+        BinaryTree BinaryTree = new BinaryTree();
+        BinaryTree.insert(1);
+        BinaryTree.insert(2);
+        BinaryTree.insert(3);
 
-        ;
+        BinaryTree.print();
 
     }
 }

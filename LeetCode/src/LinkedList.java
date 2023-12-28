@@ -35,7 +35,7 @@ public class LinkedList {
         if (index == 0) {
             newNode.next = head;
             head = newNode;
-            index++;
+            size++;
             return;
         }
 
@@ -51,7 +51,7 @@ public class LinkedList {
         }
         newNode.next = current.next;
         current.next = newNode;
-        index++;
+        size++;
     }
 
     public int peek() {
@@ -79,31 +79,28 @@ public class LinkedList {
 
     }
 
-    public void remove(int val, int index) {
-        if (index > size || index < 0) {
+    public void remove(int index) {
+        if (index >= size || index < 0) {
             System.out.println("Invalid Index");
             return;
         }
-        ListNode newNode = new ListNode(val);
         if (index == 0) {
-            newNode.next = head;
-            head = newNode;
+            head = head.next;
         } else {
             ListNode curr = head;
             for (int i = 0; i < index - 1; i++) {
                 curr = curr.next;
             }
-            newNode.next = curr.next;
-            curr.next = newNode;
+            curr.next = curr.next.next;
         }
-        size++;
+        size--;
     }
 
     public int size() {
         return size;
     }
 
-    public int getIndex(int index) {
+    public int get(int index) {
         ListNode curr = head;
         if (index > size || index < 0) {
             System.out.println("Invalid Index");
@@ -127,7 +124,7 @@ public class LinkedList {
 
     public boolean contains(int val) {
         for (int i = 0; i < size; i++) {
-            if (getIndex(i) == val) {
+            if (get(i) == val) {
                 return true;
             }
 
