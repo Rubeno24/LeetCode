@@ -12,12 +12,9 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        BinaryTree BinaryTree = new BinaryTree();
-        BinaryTree.insert(1);
-        BinaryTree.insert(2);
-        BinaryTree.insert(3);
 
-        BinaryTree.print();
+        LeetCode70 x = new LeetCode70();
+        System.out.println(x.climbStairs(5));
 
     }
 }

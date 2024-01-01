@@ -1,6 +1,7 @@
 {
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\Ruben Ortega\\Downloads\\ojdbc10.jar"
-    ]
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "c:\\Users\\Ruben Ortega\\Downloads\\ojdbc10.jar"
+  ],
+  "java.debug.settings.onBuildFailureProceed": true
 }
