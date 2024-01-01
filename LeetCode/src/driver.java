@@ -13,8 +13,8 @@ class Driver {
 
     public static void main(String[] args) throws Exception {
 
-        LeetCode70 x = new LeetCode70();
-        System.out.println(x.climbStairs(5));
+        LeetCode50 x = new LeetCode50();
+        System.out.println(x.myPow(42.38803, 1));
 
     }
 }
