@@ -6,8 +6,6 @@ public class LeetCode50 {
             x = 1 / x;
         }
 
-        
-        
         while(n != 0){
             if((n & 1) != 0){
                 answer *= x;
