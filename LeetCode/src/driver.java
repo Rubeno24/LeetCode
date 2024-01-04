@@ -13,21 +13,10 @@ class Driver {
 
     public static void main(String[] args) throws Exception {
 
-        LeetCode2 x = new LeetCode2();
-        ListNode head1 = new ListNode(2);
-        head1.next = new ListNode(4);
-        head1.next.next = new ListNode(3);
+        LeetCode2125 x = new LeetCode2125();
 
-        ListNode head2 = new ListNode(5);
-        head2.next = new ListNode(6);
-        head2.next.next = new ListNode(4);
-
-        ListNode z = x.addTwoNumbers(head1, head2);
-        z.print(z);
-
-        System.out.println();
-
-        System.out.println(12 % 10);
+        String[] arr = new String[] { "011001", "000000", "010100", "001000" };
+        System.out.println(x.numberOfBeams(arr));
 
     }
 }
