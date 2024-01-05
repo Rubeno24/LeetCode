@@ -13,10 +13,10 @@ class Driver {
 
     public static void main(String[] args) throws Exception {
 
-        LeetCode2125 x = new LeetCode2125();
-
-        String[] arr = new String[] { "011001", "000000", "010100", "001000" };
-        System.out.println(x.numberOfBeams(arr));
+        LeetCode1768 x = new LeetCode1768();
+        String word1 = "abc";
+        String word2 = "pqr";
+        System.out.println(x.mergeAlternately(word1, word2));
 
     }
 }
