@@ -12,11 +12,11 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
+        int[] arr = new int[] { 0, 1, 0, 3, 12 };
 
-        LeetCode1768 x = new LeetCode1768();
-        String word1 = "abc";
-        String word2 = "pqr";
-        System.out.println(x.mergeAlternately(word1, word2));
+        LeetCode283 x = new LeetCode283();
+        x.moveZeroes(arr);
+        System.out.println(Arrays.toString(arr));
 
     }
 }
