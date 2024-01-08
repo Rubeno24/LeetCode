@@ -39,27 +39,28 @@ public class LeetCode283 {
 
         }
         /*
-         * //base case when length is 1 or 0
+         * // base case when length is 1 or 0
          * if (nums.length <= 1) {
          * return;
          * }
          * 
-         * //variable named nonZeroIndex since the nonzero elements will be stored at
-         * //the front of the array
+         * // variable named nonZeroIndex since the nonzero elements will be stored at
+         * // the front of the array
          * int nonZeroIndex = 0;
          * 
          * 
-         * //loops through the array
+         * // loops through the array
          * for (int i = 0; i < nums.length; i++) {
          * // checks if the number at i is not 0, if its not swap it with the
-         * nonZeroIndex that starts at the beggining since we want to move non zeros to
-         * the front
+         * // nonZeroIndex that starts at the beggining since we want to move non zeros
+         * to
+         * // the front
          * if (nums[i] != 0) {
-         * // Swap the current non-zero element with the first zero element
+         * // Just does the swapping
          * int temp = nums[i];
          * nums[i] = nums[nonZeroIndex];
          * nums[nonZeroIndex] = temp;
-         * 
+         * //increment nonZeroIndex to the next nonZeroIndex
          * nonZeroIndex++;
          * }
          * }

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Scanner;
 
 class Driver {
@@ -12,11 +13,13 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        int[] arr = new int[] { 0, 1, 0, 3, 12 };
+        int[] arr = new int[100];
 
-        LeetCode283 x = new LeetCode283();
-        x.moveZeroes(arr);
-        System.out.println(Arrays.toString(arr));
+        Random rand = new Random();
+        for (int i = 0; i < 100; i++) {
+            arr[i] = rand.nextInt(100) + 1;
+
+        }
 
     }
 }
