@@ -1,6 +1,8 @@
+package SortingAlgorithms;
+
 import java.util.Random;
 
-public class SortingAlgos {
+public class QuickSort {
     public void quickSort(int[] arr, int lowIndex, int highIndex) {
         // base case if lowindex is less then or equal to highIndex, that means the
         // array has 1 or 0 elements which cant be sorted

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
+import SortingAlgorithms.*;
 
 class Driver {
     static Statement st;
@@ -14,7 +15,7 @@ class Driver {
 
     public static void main(String[] args) throws Exception {
         int[] arr = new int[1000];
-        int[] arr1 = new int[] { 1, 8, 3, 9, 4, 5, 7 };
+        int[] arr1 = new int[] { 3, 1, 8, 6, 2 };
 
         Random rand = new Random();
         for (int i = 0; i < arr.length; i++) {
@@ -24,8 +25,8 @@ class Driver {
         System.out.println("Before :");
         System.err.println(Arrays.toString(arr1));
 
-        SortingAlgos quickSort = new SortingAlgos();
-        quickSort.quickSort(arr1);
+        InsertionSort insertionSort = new InsertionSort();
+        insertionSort.insertionSort(arr1);
 
         System.out.println("After :");
         System.err.println(Arrays.toString(arr1));
