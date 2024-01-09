@@ -21,7 +21,7 @@ public class InsertionSort {
                 j--;
             }
             // we put the current which is the smallest number at j+1 since j=i-1 so that
-            // would be -1 so we add 1 to j to make it 0 the start of the array
+            // would be -1 so we add 1 to j to make it 0 the start of the array.
             arr[j + 1] = currentValue;
         }
     }
