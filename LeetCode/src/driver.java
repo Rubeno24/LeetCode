@@ -25,8 +25,8 @@ class Driver {
         System.out.println("Before :");
         System.err.println(Arrays.toString(arr1));
 
-        InsertionSort insertionSort = new InsertionSort();
-        insertionSort.insertionSort(arr1);
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.bubbleSort(arr1);
 
         System.out.println("After :");
         System.err.println(Arrays.toString(arr1));
