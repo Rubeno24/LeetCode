@@ -14,21 +14,9 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        int[] arr = new int[1000];
-        int[] arr1 = new int[] { 3, 1, 8, 6, 2 };
+        int[] arr = new int[] { 1, 12, -5, -6, 50, 3 };
+        LeetCode643 x = new LeetCode643();
+        System.out.println(x.findMaxAverage(arr, 4));
 
-        Random rand = new Random();
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = rand.nextInt(100) + 1;
-
-        }
-        System.out.println("Before :");
-        System.err.println(Arrays.toString(arr1));
-
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.bubbleSort(arr1);
-
-        System.out.println("After :");
-        System.err.println(Arrays.toString(arr1));
     }
 }
