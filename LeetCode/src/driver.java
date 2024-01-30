@@ -14,9 +14,9 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        int[] arr = new int[] { 1, 12, -5, -6, 50, 3 };
-        LeetCode643 x = new LeetCode643();
-        System.out.println(x.findMaxAverage(arr, 4));
+        int[] arr = new int[] { -5, 1, 5, 0, -7 };
+        Leetcode1732 x = new Leetcode1732();
+        System.out.println(x.largestAltitude(arr));
 
     }
 }
