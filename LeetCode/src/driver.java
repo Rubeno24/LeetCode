@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 import SortingAlgorithms.*;
+import oracle.net.aso.l;
 
 class Driver {
     static Statement st;
@@ -14,8 +15,15 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        LeetCode2390 x = new LeetCode2390();
-        System.out.println(x.removeStars("leet**cod*e"));
+        LeetCode2095 x = new LeetCode2095();
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.print(head);
+        x.deleteMiddle(head);
+        System.out.println();
+        head.print(head);
 
     }
 }
