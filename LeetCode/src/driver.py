@@ -1,5 +1,8 @@
-from LeetCode412 import Solution
+from LeetCode392 import Solution
 
 x =  Solution()
-print(x.fizzBuzz(34))
+s = "abc"
+t = "ahbgd"
+print(x.isSubsequence(s,t))
+
 
