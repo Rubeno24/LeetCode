@@ -1,23 +1,6 @@
 import java.util.ArrayList;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
 
 public class LeetCode94 {
     public static void main(String[] args) {
@@ -61,7 +44,7 @@ public class LeetCode94 {
         // in order traversal goes far left ,then root, then far right
         if (root != null) {
             helper(root.left, list);
-            list.add(root.val);
+            list.add(root.data);
             helper(root.right, list);
         }
 

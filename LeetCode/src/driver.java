@@ -14,8 +14,23 @@ class Driver {
     static Scanner scnr = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-        LeetCode388 x = new LeetCode388();
-        System.out.println(Arrays.toString(x.countBits(1)));
+    TreeNode head = new TreeNode(3);
+    TreeNode lefTreeNode = new TreeNode(9);
+    TreeNode rightTreeNode = new TreeNode(20);
+    
+    head.left=lefTreeNode;
+    head.right=rightTreeNode;
+
+    TreeNode rightRighTreeNode = new TreeNode(15);
+    TreeNode leftLefTreeNode = new TreeNode(7);
+
+    rightRighTreeNode.left=leftLefTreeNode;
+    rightTreeNode.right=rightRighTreeNode;
+
+    //head.printTree(head);
+    System.out.println(head.maxDepth(head));
+    
+    
 
     }
 }
