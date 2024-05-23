@@ -1,14 +1,16 @@
 public class LeetCode206 {
     // Reverse Linked Lists
     public ListNode reverseList(ListNode head) {
-        ListNode prev = null;
+        ListNode prev = null; // Initialize previous node to null
+
         while (head != null) {
-            ListNode temp = head.next;
-            head.next = prev;
-            prev = head;
-            head = temp;
+            ListNode temp = head.next; // Temporarily store the next node
+            head.next = prev;          // Reverse the current node's pointer
+            prev = head;               // Move previous to the current node
+            head = temp;               // Move to the next node in the list
         }
 
+        // Return the new head of the reversed list
         return prev;
     }
 }

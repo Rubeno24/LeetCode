@@ -1,12 +1,15 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 class main{
     public static void main(String[] args) throws Exception {
-        LeetCode338 x = new LeetCode338();
-    
-    
-        
-        System.out.println(Arrays.toString(x.countBits(5)));
+        LeetCode2215 x = new LeetCode2215();
+        int[] list1 = new int[]{1,2,3,3};
+        int[] list2 = new int[]{1,1,2,2 };
+
+
+        ArrayList done =(ArrayList) x.findDifference(list1, list2);
+        System.out.println(done.toString());
     
         }
 }
