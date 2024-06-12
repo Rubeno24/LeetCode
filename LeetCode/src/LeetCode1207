@@ -1,0 +1,24 @@
+from typing import List
+
+
+class Solution:
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        hashMap = {}
+        seenSet = set()
+        for numbers in arr:
+            if numbers in hashMap:
+                hashMap[numbers]+=1
+            else:
+                hashMap[numbers]=1
+        
+        for x in hashMap.values():
+            if x in seenSet:
+                return False
+            seenSet.add(x)
+        return True
+        
+
+x=Solution()
+arr=[1,2]
+print(x.uniqueOccurrences(arr))
+
