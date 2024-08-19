@@ -3,5 +3,6 @@
     "lib/**/*.jar",
     "c:\\Users\\Ruben Ortega\\Downloads\\ojdbc10.jar"
   ],
-  "java.debug.settings.onBuildFailureProceed": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "editor.formatOnSave": true
 }
