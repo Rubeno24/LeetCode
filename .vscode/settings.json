@@ -4,5 +4,10 @@
     "c:\\Users\\Ruben Ortega\\Downloads\\ojdbc10.jar"
   ],
   "java.debug.settings.onBuildFailureProceed": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "java.format.enabled": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
 }
