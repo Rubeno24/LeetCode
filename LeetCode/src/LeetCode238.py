@@ -3,21 +3,26 @@ from typing import List
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        lMulti = 1
-        rMulti = 1
-        lArr = [0] * len(nums)
-        rArr = [0] * len(nums)
-        lenght = len(nums)
-        for i in range(lenght):
-            j=-i-1
-            lArr[i] = lMulti
-            rArr[j] = rMulti
-            lMulti *= nums[i]
-            rMulti *= nums[j]
-        newArr = [0] * lenght
-        for i in range(lenght):
-            newArr[i]=lArr[i] * rArr[i]
-        return newArr
+        larr = [1] * len(nums)
+        rarr = [1] * len(nums)
+        lMul = 1
+        rMul=1
+
+        for x in range(len(nums)):
+            j=-x-1
+            larr[x]=lMul
+            rarr[j]=rMul
+            lMul=lMul*nums[x]
+            rMul=rMul*nums[j]
+
+
+        return [a * b for a, b in zip(larr, rarr)]
+
+
+
+        
+
+
 
 
 
