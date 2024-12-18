@@ -14,16 +14,20 @@ class ListNode:
             return head
         odd = head
         even = head.next
+        #keep track of the start of even node
         evenOldHead = even
-
+        #Keeps going untill the even node is null or even.next in null
         while even and even.next:
+            #moves odd to right of even
             odd.next = even.next
+            #moves odd to the next node that odd is pointing to
             odd = odd.next
 
             even.next = odd.next
             even = even.next
-
+        #links odd nodes to the head of even nodes
         odd.next = evenOldHead
+        #head is pointing to the beggining of odd so return this to get the list in order
         return head
 
     
