@@ -1,11 +1,11 @@
 class ListNode:
     #init method is just the constructor
-    def __init__ (self,data):
-        self.data = data  # self is the same as this in java
-        self.next = None  # Initialize next pointer to None
+    def __init__(self, val=0, next=None):
+         self.val = val
+         self.next = next
 
     def printList(self):
         current = self
         while current is not None:
-            print(current.data)
+            print(f"{current.val} --> ", end="")  # Print the value followed by an arrow
             current=current.next
