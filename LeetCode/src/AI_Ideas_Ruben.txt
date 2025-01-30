@@ -1,0 +1,29 @@
+Problem Statement -  During busy hours the Jenkins job queue can get backed up.
+ 
+Proposed Solution -  We can use AI to optimize the Jenkins job queue by having the AI prioritize jobs or change the way the jobs are picked from the queue. 
+                  -  AI can be used along with prior history of job completion times to simulate a shortest job first scheduling algorithm. 
+                  -  AI can be used to shut off jobs that are not making any progress to further optimize the job queue.
+ 
+Impact            -  An optimized Jenkins job queue can lead to more productivity without purchasing additional hardware.
+ 
+Example Scenario  -  During my internship at 2pm, sometimes the job queue would get filled up. Using AI to optimize the queue can save time without having to add more hardware.  
+ 
+ 
+Potential Problem -  We would have to train the AI to decide which jobs deserve priority while keeping it fair and optimizing the Jenkins job queue.
+
+ 
+ 
+Problem Statement - Pipeline failures are bound to happen and digging through logs is extremely time consuming.
+ 
+Proposed Solution - We can leverage artificial intelligence to search log files and generate a potential fix on the spot. 
+                  - We can train a machine learning model with pipeline logs and the model could analyze the log data and suggest a potential fix in real time.
+ 
+Impact            - Using AI to generate a potential fix for a failed pipeline can save the developer and the company a large amount of time and therefore a large amount of money.
+ 
+Example Scenario  - A pipeline might be missing a dependency, the tool could generate a potential solution that the developer could try before they start troubleshooting.  
+ 
+ 
+Potential Problem - We would need a large amount of log files.
+                  - These files might have sensitive data so we would need to parse the error codes
+                  - We cannot guarantee that the suggestion would fix the issue with the pipeline, so we would have to warn the developer that it is just a suggestion.
+

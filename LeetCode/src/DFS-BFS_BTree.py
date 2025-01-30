@@ -16,11 +16,22 @@ class Solution:
 
     
 
-    def DFS(self, root):
-        if root is not None:
-            print(root)
-            self.DFS(root.left)
-            self.DFS(root.right)
+    def dfs(self, root, current_sum=0):
+        if root is None:
+            return []
+
+        current_sum += root.val
+
+    # if it's a leaf node, return the current path sum
+        if root.left is None and root.right is None:
+            return [current_sum]
+
+    # recursively calculate the sum for left and right subtrees
+        left_sums = self.dfs(root.left, current_sum)
+        right_sums = self.dfs(root.right, current_sum)
+
+        return left_sums + right_sums
+
 
 # Tree structure:
 #         1
@@ -31,9 +42,10 @@ class Solution:
 
 
 x = Solution()
+root = [1,0,1,0,1,0,1]
 root = TreeNode(1, TreeNode(2 ,TreeNode(5), TreeNode(6)), TreeNode(3))
 print("BFS Think Broad")
 x.BFS(root)
 print ("--------------------------")
 print("DFS Think Deep")
-x.DFS(root)
+print(x.dfs(root))
