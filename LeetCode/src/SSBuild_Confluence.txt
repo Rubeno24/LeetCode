@@ -1,0 +1,5 @@
+1. Use a more current picture that includes the TF tester list.
+2. Explain more about the tester list. Since they will have questions.
+3. Explain more about initial branch, will they know what the latest release is.
+4. Section 8, include pictures maybe
+5. Then add a really in dept json Section
